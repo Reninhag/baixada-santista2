@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    margin-top: 3%;
+    color: #323232;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #323232;
+    cursor: pointer;
+}
+h1, h2 {
+    color: var(--color-amarelo);
+}
+iframe {
+    border: 4px solid #008080;
+    border-radius: 4px;
+    box-shadow: 3px 3px 7px #323232;
+}
+
+
+/* 
+
+            Pseudo-classes
+
+*/
+
+::selection {
+    background-color: #008080;
+    color: #f1f1f1;
+}
+
+/*
+
+            Header
+
+*/
+
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #008080;
+    z-index: 1;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Open Sans";
+}
+.header a {
+    font-size: 1.2em;
+    font-family: "Open Sans";
+    color: #f1f1f1;
+}
+.header button {
+    background-color: #e0e0e0;
+    color: #008080;
+    border: 0;
+    border-radius: 5px;
+    padding: 3px 7px;
+    font-size: 0.9em;
+}
+
+
+/*
+
+            Parte do Video e Texto
+
+*/
+
+
+.box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+.txt-box-1 {
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.btn {
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    background-color: #008fff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    transition: 0.5s;
+}
+.btn:hover {
+    background-color: #0077d1;
+    transform: translateY(-5px);
+}
+
+
+/*
+
+            Cartões
+
+*/
+
+
+.box-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 15%;
+}
+.box-2 {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    background: #f1f1f1;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 0.8em;
+}
+.cdd {
+    width: 80%;
+    height: 13em;
+    margin: 20px 25px 0 25px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.txt-card {
+    padding: 20px;
+    font-size: 27px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.txt-card-2 {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 12px;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+
+
+/*
+
+            Cartões / Hover 
+
+*/
+
+
+.box-2:hover {
+    scale: 1.1;
+    transform: translateY(-20px);
+    transition: 0.5s;
+    transition-delay: 0.7s;
+}
+.box-2:hover .cdd {
+    transform: translateY(-200px);
+}
+.box-2:hover .txt-card {
+    transform: translateY(-200px);
+    font-weight: 500;
+    transition-delay: 0.2s;
+    color: #008fff;
+}
+.box-2:hover .txt-card-2 {
+    transform: translateY(-210px);
+    transition-delay: 0.4s;
+}
+
+
+/*
+
+            Texto informativo 
+
+*/
+
+
+.box-3 {
+    padding: 60px;
+}
+.wave {
+    background-color: #008fff;
+    width: 100%;
+    height: 10px;
+    box-shadow: 3px 3px 5px #323232;
+}
+.txt-box-3 {
+    padding: 10px 30px;
+    text-align: justify;
+}
+.txt-box-3 h1{
+    padding: 10px;
+    text-align: center;
+}
+.mapa-baixada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wave2 {
+    background-color: #008fff;
+    width: 100%;
+    height: 10px;
+    box-shadow: 3px -3px 5px #323232;
+}
+
+
+/* 
+
+            Footer
+
+*/
+
+footer {
+    background-color: #005757;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    padding: 30px;
+    background-color: rgba(0, 18, 18, 0.2);
+    color: #dadada;
+}
+.footer h2 {
+    padding: 20px 20px;
+}
+.footer p {
+    padding: 20px 15px 0;
+    text-align: center;
+}
+.nomes {
+    padding: 0 20px 40px;
+    text-align: justify;
+}

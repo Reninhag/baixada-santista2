@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Poppins";
+}
+body {
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 9%;
+    color: #323232;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--color-title);
+}
+iframe {
+    border-radius: 4px;
+    box-shadow: 4px 4px 7px #323232;
+}
+
+
+/* 
+
+            Pseudo-classes
+
+*/
+
+
+::selection {
+    background-color: #008080;
+    color: #f1f1f1;
+}
+
+::marker{
+    color: #0084e9;
+}
+
+
+/* 
+
+            Header
+
+*/
+
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9%;
+    background-color: #008080;
+    z-index: 99;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Open Sans";
+}
+.header a{
+    font-size: 110%;
+    color: #f1f1f1;
+}
+.header button {
+    background-color: #e0e0e0;
+    color: #008080;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.25em 0.5em;
+    font-size: 90%;
+    cursor: pointer;
+}
+.box-link-header .link-header{
+    margin-left: 30px;
+}
+
+
+/* 
+
+            Caroussel
+
+*/
+
+aside {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    background-color: #dff7f7;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.2);
+}
+
+.seta-esquerda {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #008080;
+    z-index: 1;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.caroussel {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: 0.5;
+}
+#seta-esquerda{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin:  0 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+.caroussel:hover .imagens{
+    animation-name: carousselhover;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carousselhover {
+    50% {
+        transform: translateX(-400px);
+        transition: 20s;
+    }
+    100%{
+        transform: translateX(-0px);
+        transition: 20s;
+    }
+}
+
+.imagens{
+    flex: 1 0 auto;
+    margin: 0 20px;
+    background-color: #545454;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.imagens img{
+   width: 300px;
+   height: 200px;
+   border-radius: 12px;
+}
+/* 
+
+            Tabela
+
+*/
+
+
+.box-1 .tabela table{
+    border: 1px solid #e0e0e0;
+    background-color: #008080;
+}
+
+.box-1 .tabela table, tr,th,td {
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #323232;
+    border: 1px solid #008080;
+}
+.box-1 .tabela tr, th, td {
+    padding: 5px 6px;
+    background-color: #fff;
+}
+
+
+.box-1{
+    display: inline-block;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: center;
+}
+.tabela {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+/* 
+
+            Mapinha
+
+*/
+
+
+
+.box-maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    border: 4px solid #008080;
+    width: 400px;
+    height: 250px;
+}
+
+.santos{
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+
+/* 
+
+            Onde comer / O que fazer / Onde Ficar
+
+*/
+
+.section {
+    width: 100%;
+}
+
+.title-lista{
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: var(--color-title);
+}
+
+
+.onde-comer{
+    height: 25em;
+    padding: 50px;
+    margin: 40px 0 0 0;
+    accent-color: #008080;
+    background-color: #f1f1f1;
+}
+.onde-comer li {
+    padding: 20px;
+}
+
+
+.oque-fazer{
+    height: 23em;
+    padding: 50px;
+    accent-color: #008080;
+}
+.oque-fazer li{
+    padding: 20px;
+}
+
+
+.onde-ficar {
+    height: 25em;
+    padding: 50px;
+    margin: 40px 0 0 0;
+    accent-color: #008080;
+    background-color: #f1f1f1;
+}
+.onde-ficar li{
+    padding: 20px;
+}
+
+
+/* 
+
+            Footer
+
+*/
+
+
+footer {
+    background-color: #005757;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    padding: 30px;
+    background-color: rgba(0, 18, 18, 0.2);
+    color: #dadada;
+}
+.footer .site {
+    padding: 0 20px;
+    color: #dadada;
+}
+.footer h2 {
+    padding: 20px 20px;
+}
+.footer .copy {
+    padding: 20px 15px 0;
+    text-align: center;
+}
+.footer hr{
+    color: #dadada;
+}
+.nomes {
+    padding: 0 20px 40px;
+    text-align: justify;
+}
